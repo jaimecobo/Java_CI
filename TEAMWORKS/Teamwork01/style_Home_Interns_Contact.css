@@ -1,0 +1,2648 @@
+/* //////////////////////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/*
+Author: Jaime Cobo Nayar 
+Note: This code has been written as part of a Bootstrap project for a training program, 
+it was intended to make a replica of the original website tinyhorse.com, everything was made with educational purposes only.
+*/
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////////////////////////////////////////////////////// */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
+/* #header{
+    width: 1310px;
+    max-width: 90%; 
+    height: 80px;
+    background-color:cornflowerblue;
+    margin:0;
+} */
+
+/* body{
+    background-repeat: no-repeat;              
+    background-image: url("Tiny-Horse-Marketing-Agency-Contact.jpg"); 
+    background-attachment: scroll;
+    background-position: center;
+    margin:0;
+    width: 1920px;
+    
+} */
+
+/* ##################################################################### */
+/* #menu-icon {
+	display: hidden !important;
+	width: 40px;
+	height: 40px;
+	background: url(menu_icon_64px.png) center;
+	background-size: contain;
+} */
+
+.navbar ul li:hover {
+    border-bottom: 2px solid red;
+  }
+
+ul {
+    list-style-type: none;
+  }
+
+nav {
+    float: left;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+nav ul li a {
+	text-decoration: none;
+	/* color: black; 
+    color: #87909e; */
+}
+
+/* ################################################################### */
+
+#transparent_block{
+    background:transparent;
+    /* height: 100px */
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* #interns_img_block{
+    opacity: 1; 
+    background-color: #000000;
+    filter:grayscale(0.5);
+} */
+
+
+#main_img{
+    /* width:fit-content; */
+    width: 1900px;
+    height: 1040px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    filter: brightness(60%);
+}
+
+#ul_navbar_options{
+    margin-right: 320px;
+}
+
+.anchor_navbar{
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+    font-size: 16px;
+}
+#ul_locations{
+    margin-left: 345px;
+}
+
+#locations_title{
+    font-size: 16px;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#cities_location_00{
+    font-size: 34px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+#cities_location_01{
+    margin-left: 245px;
+    font-size: 34px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+#cities_location_02{
+    margin-left: 285px;
+    font-size: 34px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+#gradientBar{
+    /* width:fit-content; */
+    width:1900px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+}
+#gradientBar_interns{
+    width:1900px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+}
+#gradientBar_home_img{
+    width:1900px;
+    height: 175px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+}
+
+#locations{
+    width: 1900px;
+    height: 250px;
+    background: #f4eae9;
+}
+
+#ourIntership{
+    width: 1900px;
+    height: 250px;
+    background: #f4eae9;
+}
+
+#entertAgenBran{
+    width: 1900px;
+    height: 375px;
+    background: #f4eae9;
+}
+
+#experienceIsKing{
+    width: 1900px;
+    height: 350px;
+    background: #f4eae9;
+}
+
+#text_entertAgenBran{
+    line-height: 50px;
+    font-size: 32px;
+    font-weight: 570;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-family: 'STIX Two Math', serif;
+    margin-left: 345px;
+    margin-right: 345px;
+    text-align: center;
+}
+
+
+#text_ourIntership{
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 570;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-family: 'STIX Two Math', serif;
+    margin-left: 345px;
+    margin-right: 345px;
+}
+
+#title_experienceIsKing{
+    line-height: 50px;
+    font-size: 16px;
+    /* font-weight: 570; */
+    padding-top: 40px;
+    /* padding-bottom: 50px; */
+    font-family: 'Poppins', sans-serif;
+    margin-left: 345px;
+}
+
+
+#text_experienceIsKing{
+    line-height: 50px;
+    font-size: 24px;
+    font-weight:599;
+    /* padding-top: 10px; */
+    padding-bottom: 50px;
+    font-family: 'STIX Two Math', serif;
+    margin-left: 345px;
+    margin-right: 325px;
+}
+
+#recomendt{
+    background-color: white;
+    width: 1900px;
+    height: 650px;
+
+}
+
+#recomendt_ul{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 345px;
+}
+#recomendt_ul_01{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+#recomendt_ul_02{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+#recomendt_text{
+    font-family: 'STIX Two Math', serif;
+    font-size: 25px;
+    font-weight: 599;
+    line-height: 50px;
+}
+
+.recomendt_name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#recomendtName01{
+    padding-top: 155px;
+}
+#recomendtName02{
+    padding-top: 110px;
+}
+
+#recomendtName03{
+    padding-top: 10px;
+}
+
+#recomendt_ocup{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#tripleCrownDiv{
+    background-color: white;
+    width: 1900px;
+    height: 400px;
+}
+
+#imgTripleCrown{
+    margin-left: 445px;
+    padding-top: 90px;
+}
+
+#imgTripleCrown img{
+    width: 1000px;
+    height: 221px; 
+}
+
+
+#formDiv{
+    background-color: white;
+    width: 1900px;
+    height: 750px;
+}
+
+#formTitle{
+    margin-left: 345px;
+    padding-top: 90px;
+}
+
+#spanTitle{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+
+}
+
+#input_text{
+    border-color: transparent;
+    background: #e1e1e1;
+    width: 396px;
+    height: 50px;
+}
+
+textarea {
+    border-color: transparent;
+    background: #e1e1e1;
+    width: 1210px;
+    height: 200px;
+}
+
+#ul_enterAgentBran{
+    margin-left: 345px;
+    margin-top: -40px;
+}
+
+#entertAgenBranButton{
+border-color: #212326;
+border-width: 0.7mm;
+font-family: 'STIX Two Math', serif;
+letter-spacing: 1px;
+font-size: 30px;
+font-weight: 599;
+background: transparent;
+/* margin-left: 345px; */
+/* margin-top: 30px; */
+width: 350px;
+height: 100px;
+margin-bottom: 50px;
+}
+
+#entertAgenBranButton_01{
+    border-color: #212326;
+    border-width: 0.7mm;
+    font-family: 'STIX Two Math', serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 599;
+    background: transparent;
+    /* margin-left: 345px; */
+    /* margin-top: 30px; */
+    width: 350px;
+    height: 100px;
+    margin-bottom: 50px;
+    }
+
+#entertAgenBranButton_Text{
+    text-align: center;
+    font-size: 14px;
+    margin-top: -40px;
+}
+
+#entertAgenBranButton_Text_01{
+    text-align: center;
+    font-size: 14px;
+    margin-top: -40px;
+}
+
+#formButton{
+border-color: #212326;
+border-width: thin;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 1px;
+font-size: 14px;
+background: transparent;
+margin-left: 345px;;
+margin-top: 30px;
+width: 250px;
+height: 50px;
+margin-bottom: 50px;
+}
+
+#ul_form{
+margin-left: 345px;;
+}
+#ul_li_label_form{
+margin-top: 50px;
+font-size: 14px;
+font-family: 'Poppins', sans-serif;
+}
+
+#ul_li_label_form_01{
+    margin-top: 50px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 320px;
+    }
+
+#ul_li_text_area_title{
+font-size: 14px;
+font-family: 'Poppins', sans-serif;
+margin-top: 25px;
+}
+
+#whatIsTripleCrown{
+    width: 1900px;
+    height: 500px;
+    background:white;
+}
+
+#title_whatIsTP{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 100px;
+    margin-left: 345px;
+}
+
+#ul_whatIsTP_00{
+    margin-left: 310px;
+    margin-top: 35px;
+}
+
+#ul_whatIsTP_01{
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+#ul_whatIsTP_02{
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+#inner_div_WhIsTP{
+    width:350px;
+    height: 350px;
+}
+
+#inner_div_WhIsTP li h2{
+    font-family: 'STIX Two Math', serif;
+    font-size: 24px;
+    font-weight: 599;
+    margin-top: 30px;
+}
+
+#inner_div_WhIsTP li h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 599;
+    margin-top: 30px;
+}
+
+/* #div_dev_Tshape{
+    width:350px;
+    height: 275px;
+}
+
+#div_circleLogo{
+    width:350px;
+    height: 275px;
+} */
+
+
+#chooseStable{
+    width: 1900px;
+    height: 500px;
+    background: #f4eae9;
+    /* align-items: center; */
+}
+
+#ul_chooseStable_00{
+    padding-left: 345px;
+}
+#ul_chooseStable_01{
+    padding-left: 70px;
+}
+
+#img_chooseStable{
+    width: 250px;
+    height: 200px;
+    padding-top: 40px;
+}
+#inner_div_chooseStable li h2{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'STIX Two Math', serif;
+    font-size: 24px;
+    font-weight: 599;
+
+}
+
+#title_chooseStable_00{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#title_chooseStable_01{
+    font-family: 'STIX Two Math', serif;
+    font-size: 24px;
+    font-weight: 599;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#internsComents{
+    width: 1900px;
+    height: 700px;
+}
+
+/* #carouselExampleControls{
+    height: 700px;
+    background: white;
+} */
+
+#ul_internscarousel_00{
+    padding-left: 345px;
+}
+
+#ul_internscarousel_01{
+    padding-left: 60px;
+}
+
+#inner_div_interns{
+    width: 350px;
+    height: 600px;
+}
+
+#inner_div_interns li h3{
+    font-family: 'STIX Two Math', serif;
+    font-size: 20px;
+    font-weight: 599;
+    line-height: 1.6;
+    padding-top: 100px;
+}
+
+#inner_div_interns div div img{
+    margin-top: 50px;
+    /* class="img-circle" alt="Cinque Terre" width="304" height="304" */
+    
+}
+
+/* #inner_div_interns div h6{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 599;
+    line-height: 1.6;
+    padding-top: 10px;
+} */
+
+table{
+    margin-top: 40px;
+}
+
+#internName{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 599;
+    line-height: 1.6;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#inTheSaddle{
+    width: 1900px;
+    height: 250px;
+    background: #f4eae9;
+
+}
+
+#home_contactUs{
+    width: 1900px;
+    height: 250px;
+}
+
+#l1_home_contactUs{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* padding-top:80px; */
+    /* margin-left: 285px; */
+}
+
+#l2_home_contactUs{
+    font-family: 'STIX Two Math', serif;
+    font-size: 40px;
+    padding-top: 30px;
+    /* margin-left: 285px; */
+}
+
+#l1_inTheSaddle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-top:80px;
+    margin-left: 285px;
+}
+
+#l2_inTheSaddle{
+    font-family: 'STIX Two Math', serif;
+    font-size: 24px;
+    margin-left: 285px;
+}
+
+#bottomPage{
+    
+    background-color: #212326;
+    color: white;
+    width: 1900px;
+    height: 400px;
+}
+
+#ul_botton_page_00{
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+#ul_botton_page_01{
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+#ul_botton_page_02{
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+
+#logo {
+    height: 100px;
+    width: 200px;
+    margin-left: 320px;;
+}
+
+#footer_logo{
+    height: 100px;
+    width: 200px;
+    margin-left: 120px;
+    margin-top: 20px;
+    margin-bottom: -1em;
+}
+
+#teamWhistleLogo{
+    height: 40px;
+    width: 200px;
+    margin-left: 120px;
+    margin-top: -1em;
+
+}
+
+.bg-light{
+    background: transparent !important;
+    width:1900px;
+}
+
+.bg-light.scrolled{
+    background: #212326 !important;
+    transition: 1s ease;
+}
+
+#logo.scrolled{
+    height: 50px;
+    width: 100px;
+    transition: 0.5s ease;
+}
+
+#Are_you_re{
+    /* font-family: 'Playfair Display', serif;
+    background-color:transparent; */
+    color:transparent;
+    /* color: #f4eae9; */
+    /* font-size: 36px;
+    margin-left: 230px; */
+    /* height: 800px; */
+    /* padding-top: 200px; */
+}
+
+/* #Are_you_re div{
+    color: transparent;
+
+} */
+
+#Are_you_re h1{
+    font-family: 'Playfair Display', serif;
+    background:transparent;
+    color: #f4eae9;
+    font-size: 60px;
+    margin-left: 345px;
+    margin-top: 320px;
+    /* margin-bottom: 100px; */
+    margin-bottom: 380px;
+    /* height: 400px; */
+    /* padding-top: 100px; */
+}
+
+/* #home_text{
+        font-family: 'Playfair Display', serif;
+        font-size: 10px;
+        background:transparent;
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        background:transparent;
+        color: #f4eae9;
+        margin-left: 345px;
+        margin-top: 320px;
+        margin-bottom: 380px;
+} */
+
+.textCentral_home{
+    background:transparent;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    background:transparent;
+    color: #f4eae9;
+}
+
+.textCentral_home h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 59px;
+    margin-left: 345px;
+    line-height: 1.6;
+}
+
+
+#home_contactUs_img{
+    width: 1900px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    /* filter: brightness(60%); */
+}
+
+.textCentral_home_bottom{
+    position: absolute;
+    color: #f4eae9;
+    margin-top: 40px;
+    margin-left: 345px;
+    line-height: 1.6;
+}
+
+.textCentral_contact{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    background:transparent;
+    /* color: black; */
+    color: #f4eae9;
+    /* margin-left: 345px; */
+}
+
+
+.textCentral{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    background:transparent;
+    /* color: black; */
+    color: #f4eae9;
+    /* margin-left: 345px; */
+}
+.textCentral h6{
+    /* font-size: 14px; */
+    font-family: 'Poppins', sans-serif;
+    /* color: #f4eae9; */
+}
+
+.textCentral h1{
+    font-size: 60px;
+    font-family: 'STIX Two Math', serif;
+    /* font-weight: bold; */
+    /* color: #f4eae9; */
+}
+
+
+.copyright{
+    /* margin-top: 40px; */
+    /* margin-left: 40px; */
+    color:cadetblue;
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    /* align-self: flex-end;  */
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+#copyright{
+    position: relative;
+}
+
+.scrollTop{
+    color:cadetblue;
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    /* align-self: flex-end;  */
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+
+}
+
+#scrollTop{
+    position: relative;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 1700px) {
+    #main_img{
+        /* width:fit-content; */
+        width: 1700px;
+        /* height: 1144px; */
+    }
+    
+    
+    .textCentral{                               /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        left: 30%;
+    }
+
+    .textCentral h1{
+        font-size: 47px;
+
+    }
+
+    #gradientBar_home_img{
+        width:1700px;
+    }
+
+    #gradientBar{
+        width: 1700px;
+    }
+
+    #gradientBar_interns{                         /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width:1700px;
+    }
+
+    #entertAgenBran{
+        width: 1700px;
+        /* height: 375px; */
+    }
+
+    #recomendt{
+        width: 1700px;
+        /* height: 650px; */
+    }
+
+    #home_contactUs{
+        width: 1700px;
+        /* height: 250px; */
+    }
+
+    #home_contactUs_img{
+        width: 1700px;
+        /* height: 250px; */
+    }
+
+        
+    #locations{
+        width: 1700px;
+        height: 250px;      
+    }
+
+    #ourIntership{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1700px;
+    }
+
+    #ul_enterAgentBran{
+        margin-left: 245px;
+        /* margin-top: -40px; */
+    }
+
+    #text_ourIntership{                             /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */           /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        margin-left: 245px;
+    }
+
+    #imgTripleCrown{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */           /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        margin-left: 345px;
+    }
+
+    #tripleCrownDiv{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1700px;
+        /* height: 400px; */
+    }
+
+    #experienceIsKing{                              /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1700px;
+        /* height: 350px; */
+    }
+    
+    #title_experienceIsKing{                        /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        margin-left: 245px;
+    }
+    
+    
+    #text_experienceIsKing{                         /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        margin-left: 245px;
+        margin-right: 125px;
+    
+    }
+
+    #whatIsTripleCrown{                             /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1700px;
+        /* height: 500px; */
+    }
+    
+    #title_whatIsTP{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        margin-left: 245px;
+    }
+    
+    #ul_whatIsTP_00{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        margin-left: 210px;
+    }
+    
+    #ul_whatIsTP_01{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        margin-left: 40px;
+    
+    }
+    
+    #ul_whatIsTP_02{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        margin-left: 40px;
+    }
+
+    #internsComents{
+        width: 1700px;
+        /* height: 400px; */
+    }
+
+    #chooseStable{                                  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1700px;
+        /* height: 500px; */
+    }
+    
+    #ul_chooseStable_00{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        padding-left: 245px;
+    }
+    #ul_chooseStable_01{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        padding-left: 70px;
+    }
+
+    #inTheSaddle{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1700px;
+        /* height: 250px; */
+    
+    }
+    
+    #l1_inTheSaddle{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        padding-top:80px;
+        margin-left: 185px;
+    }
+    
+    #l2_inTheSaddle{
+        margin-left: 185px;                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+    }
+
+    #ul_internscarousel_00{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        padding-left: 245px;
+    }
+
+    #ul_chooseStable_01{
+        padding-left: 50px;
+    }
+
+
+    
+    #formDiv{
+        width: 1700px;
+        height: 750px;
+    }
+    
+    #bottomPage{
+        width: 1700px;
+        height: 400px;
+    }
+    
+    .bg-light{
+        width:1700px;
+    }
+
+    
+
+    /* //////////////////////////////////////// */
+
+    #logo {
+        margin-left: 220px;
+    }
+    #ul_navbar_options{
+        margin-right: 220px;
+    }
+
+    .textCentral_home h1{
+        font-size: 56px;
+        margin-left: 245px;
+        /* line-height: 1.6; */
+    }
+
+    #recomendt_ul{
+        margin-left: 245px;
+    }
+
+    .textCentral_home_bottom{
+        margin-left: 245px;
+    }
+
+    #ul_locations{
+        margin-left: 245px;
+        }
+        
+        #formTitle{
+        margin-left: 245px;
+        }
+        
+        #formButton{
+        margin-left: 245px;;
+        }
+        
+        #ul_form{
+        margin-left: 245px;;
+        }
+
+        #ul_botton_page_00{
+            margin-left: 100px;
+        }
+        
+        /* #ul_botton_page_01{
+            margin-left: 200px;
+            margin-top: 40px;
+        }
+        
+        #ul_botton_page_02{
+            margin-left: 200px;
+            margin-top: 40px;
+        } */
+          
+        #Are_you_re h1{
+            font-size: 60px;
+            margin-left: 245px;
+            margin-top: 320px;
+            margin-bottom: 380px;
+        }
+
+        #cities_location_01{
+            margin-left: 195px;
+            
+        }
+        
+        #cities_location_02{
+            margin-left: 235px;
+            
+        }
+        .copyright{
+            left: 50px;
+        }
+}
+
+@media only screen and (max-width : 1500px) {
+
+    #main_img{
+        /* width:fit-content; */
+        width: 1500px;
+        /* height: 1260px; */
+
+    }
+    
+    .textCentral{                               /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        left: 27%;
+    }
+
+    #gradientBar_home_img{
+        width:1500px;
+    }
+
+    #gradientBar{
+        /* width:fit-content; */
+        width:1500px;
+        height: 50px;
+    }
+
+    #gradientBar_interns{                       /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width:1500px;
+    }
+
+    #entertAgenBran{
+        width: 1500px;
+        /* height: 375px; */
+    }
+
+    #recomendt{
+        width: 1500px;
+        /* height: 650px; */
+    }
+
+    #home_contactUs{
+        width: 1500px;
+        /* height: 250px; */
+    }
+
+    #home_contactUs_img{
+        width: 1500px;
+        /* height: 250px; */
+    }
+        
+    #locations{
+        width: 1500px;
+        height: 250px;
+    }
+
+    #ourIntership{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1500px;
+    }
+    
+    #tripleCrownDiv{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1500px;
+        /* height: 400px; */
+    }
+
+    #experienceIsKing{                              /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1500px;
+        /* height: 350px; */
+    }
+
+    #whatIsTripleCrown{                             /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1500px;
+        /* height: 500px; */
+    }
+
+    #internsComents{
+        width: 1500px;
+        /* height: 400px; */
+    }
+
+    #chooseStable{                                  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1500px;
+        /* height: 500px; */
+    }
+
+    #inTheSaddle{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1500px;
+        /* height: 250px; */
+    
+    }
+    
+    #formDiv{
+        width: 1500px;
+        height: 750px;
+    }
+    
+    #bottomPage{
+        width: 1500px;
+        height: 400px;
+    }
+    
+    .bg-light{
+        width:1500px;
+    }
+
+
+    /* //////////////////////////////////////// */
+
+    #logo {
+        margin-left: 120px;
+    }
+
+    #ul_navbar_options{
+        margin-right: 120px;
+    }
+
+    .textCentral_home h1{
+        font-size: 54px;
+        margin-left: 145px;
+        /* line-height: 1.6; */
+    }
+
+    #text_entertAgenBran{
+        /* line-height: 50px;
+        font-size: 32px;
+        font-weight: 570;
+        padding-top: 70px;
+        padding-bottom: 50px; */
+        /* font-family: 'STIX Two Math', serif; */
+        margin-left: 145px;
+        margin-right: 145px;
+        /* text-align: center; */
+    }
+
+    #recomendt_ul{
+        margin-left: 145px;
+    }
+
+    .textCentral_home_bottom{
+        margin-left: 145px;
+    }
+
+    #ul_locations{
+        margin-left: 145px;
+        }
+        
+        #formTitle{
+        margin-left: 145px;
+        }
+        
+        #formButton{
+        margin-left: 145px;;
+        }
+        
+        #ul_form{
+        margin-left: 145px;;
+        }
+
+        #ul_botton_page_00{
+            margin-left: 0px;
+        }
+        
+        #Are_you_re h1{
+            font-size: 60px;
+            margin-left: 145px;
+            margin-top: 320px;
+            margin-bottom: 380px;
+        }
+
+        #cities_location_01{
+            margin-left: 145px;
+            
+        }
+        
+        #cities_location_02{
+            margin-left: 185px;
+            
+        }
+
+        #ul_enterAgentBran{
+            margin-left: 145px;
+            /* margin-top: -40px; */
+        }
+
+        #text_ourIntership{                             /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */           /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 145px;
+            margin-right: 145px;
+        }
+        
+        #imgTripleCrown{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */           /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 245px;
+        }
+        
+        
+        
+        #title_experienceIsKing{                        /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 145px;
+        }
+        
+        
+        #text_experienceIsKing{                         /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 145px;
+            margin-right: 125px;
+        }
+        
+        #title_whatIsTP{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 145px;
+        }
+
+        #ul_whatIsTP_00{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 110px;
+        }
+        
+        #ul_whatIsTP_01{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 40px;
+        
+        }
+        
+        #ul_whatIsTP_02{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 40px;
+        }
+        
+        
+        #ul_chooseStable_00{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            padding-left: 145px;
+        }
+        #ul_chooseStable_01{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            padding-left: 40px;
+        }
+        
+        
+        #l1_inTheSaddle{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            padding-top:80px;
+            margin-left: 85px;
+        }
+        
+        #l2_inTheSaddle{
+            margin-left: 85px;                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        }
+        
+        #ul_internscarousel_00{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            padding-left: 145px;
+        }
+        
+        
+}
+
+@media only screen and (max-width : 1300px) {
+
+    
+    #main_img{
+        /* width:fit-content; */
+        width: 1300px;
+        /* height: 1370px; */
+    }
+
+    .textCentral{                               /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        left: 24%;
+    }
+
+    #gradientBar_home_img{
+        width:1300px;
+    }
+    
+    #gradientBar{
+        /* width:fit-content; */
+        width:1300px;
+        height: 50px;
+    }
+
+    #gradientBar_interns{                       /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width:1300px;
+    }
+
+    #entertAgenBran{
+        width: 1300px;
+        /* height: 375px; */
+    }
+        
+    #recomendt{
+        width: 1300px;
+        /* height: 650px; */
+    }
+
+    #home_contactUs_img{
+        width: 1300px;
+        /* height: 250px; */
+    }
+
+    #home_contactUs{
+        width: 1300px;
+        /* height: 250px; */
+    }
+
+    #locations{
+        width: 1300px;
+        height: 250px;
+    }
+
+    #ourIntership{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1300px;
+    }
+    
+    #tripleCrownDiv{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1300px;
+        /* height: 400px; */
+    }
+
+    #experienceIsKing{                              /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1300px;
+        /* height: 350px; */
+    }
+
+    #whatIsTripleCrown{                             /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1300px;
+        /* height: 500px; */
+    }
+
+    #internsComents{
+        width: 1300px;
+        /* height: 400px; */
+    }
+
+    #chooseStable{                                  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1300px;
+        /* height: 500px; */
+    }
+
+    #inTheSaddle{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1300px;
+        /* height: 250px; */
+    
+    }
+    
+    
+
+    #formDiv{
+        width: 1300px;
+        height: 750px;
+    }
+    
+    #bottomPage{
+        width: 1300px;
+        height: 400px;
+    }
+    
+    .bg-light{
+        width:1300px;
+    }
+
+
+
+    /* //////////////////////////////////////// */
+
+    #logo {
+        margin-left: 20px;
+    }
+
+    #ul_navbar_options{
+        margin-right: 20px;
+    }
+
+    .textCentral_home h1{
+        font-size: 52px;
+        margin-left: 45px;
+        /* line-height: 1.6; */
+    }
+
+    #text_entertAgenBran{
+        /* line-height: 50px;
+        font-size: 32px;
+        font-weight: 570;
+        padding-top: 70px;
+        padding-bottom: 50px; */
+        /* font-family: 'STIX Two Math', serif; */
+        margin-left: 45px;
+        margin-right: 45px;
+        /* text-align: center; */
+    }
+
+    #recomendt_ul{
+        margin-left: 45px;
+    }
+
+    .textCentral_home_bottom{
+        margin-left: 45px;
+    }
+
+    #ul_locations{
+        margin-left: 45px;
+        }
+        
+        #formTitle{
+        margin-left: 45px;
+        }
+        
+        #formButton{
+        margin-left: 45px;;
+        }
+        
+        #ul_form{
+        margin-left: 45px;;
+        }
+
+        #ul_botton_page_00{
+            margin-left: -100px;
+        }
+        
+        #ul_botton_page_01{
+            margin-left: 100px;
+        }
+        
+        #ul_botton_page_02{
+            margin-left: 100px;
+        }
+        
+        
+        #Are_you_re h1{
+            font-size: 60px;
+            margin-left: 45px;
+            margin-top: 320px;
+            margin-bottom: 380px;
+        }
+
+        #cities_location_01{
+            margin-left: 95px;
+            
+        }
+        
+        #cities_location_02{
+            margin-left: 135px;
+            
+        }
+
+        .copyright{
+            left: -30px;
+        }
+
+        #ul_enterAgentBran{
+            margin-left: 45px;
+            /* margin-top: -40px; */
+        }
+
+
+        #text_ourIntership{                             /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */           /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 45px;
+            margin-right: 45px;
+        }
+        
+        #imgTripleCrown{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */           /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 145px;
+        }
+    
+        
+        #title_experienceIsKing{                        /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 45px;
+        }
+        
+        
+        #text_experienceIsKing{                         /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 45px;
+            margin-right: 75px;
+        }
+        
+        #title_whatIsTP{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 45px;
+        }
+        
+        #ul_whatIsTP_00{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 10px;
+        }
+        
+        #ul_whatIsTP_01{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 40px;
+        
+        }
+        
+        #ul_whatIsTP_02{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 40px;
+        }
+        
+        
+        #ul_chooseStable_00{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            padding-left: 45px;
+        }
+        
+        
+        
+        #l1_inTheSaddle{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            padding-top:80px;
+            margin-left: 45px;
+        }
+        
+        #l2_inTheSaddle{
+            margin-left: 45px;                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        }
+        
+        #ul_internscarousel_00{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            padding-left: 45px;
+        }
+        
+       
+}
+    
+
+@media only screen and (max-width : 1100px) {
+
+    
+    #main_img{
+        /* width:fit-content; */
+        width: 1100px;
+        /* height: 600px; */
+    }
+
+    .textCentral{                               /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        left: 29%;
+    }
+
+    #gradientBar_home_img{
+        width:1100px;
+    }
+    
+    
+    #gradientBar{
+        /* width:fit-content; */
+        width:1100px;
+        height: 50px;
+    }
+
+    #gradientBar_interns{                       /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width:1100px;
+    }
+
+    #entertAgenBran{
+        width: 1100px;
+        /* height: 375px; */
+    }
+
+    #recomendt{
+        width: 1100px;
+        /* height: 650px; */
+    }
+
+    #home_contactUs_img{
+        width: 1100px;
+        /* height: 250px; */
+    }
+
+    #home_contactUs{
+        width: 1100px;
+        /* height: 250px; */
+    }
+        
+    #locations{
+        width: 1100px;
+        height: 250px;
+    }
+
+    #ourIntership{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1100px;
+    }
+    
+    #tripleCrownDiv{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1100px;
+        /* height: 400px; */
+    }
+
+    #experienceIsKing{                              /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1100px;
+        height: 400px; 
+    }
+    
+    #whatIsTripleCrown{                             /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1100px;
+        height: 450px;
+    }
+
+    #internsComents{
+        width: 1100px;
+        /* height: 400px; */
+    }
+
+    #chooseStable{                                  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1100px;
+        /* height: 500px; */
+    }
+
+    #inTheSaddle{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 1100px;
+        /* height: 250px; */
+    
+    }
+    
+
+    #formDiv{
+        width: 1100px;
+        height: 750px;
+    }
+    
+    #bottomPage{
+        width: 1100px;
+        height: 400px;
+    }
+    
+    .bg-light{
+        width:1100px;
+    }
+
+    #ul_li_label_form_01{
+        margin-left: 240px;
+        }
+
+    #input_text{
+        width: 313px;
+    }
+
+    textarea {
+        width: 960px;
+    }
+
+    /* //////////////////////////////////////// */
+
+    .textCentral_home h1{
+        font-size: 43px;
+        /* margin-left: 45px; */
+        /* line-height: 1.6; */
+    }
+
+    #entertAgenBranButton{
+        /* border-color: #212326; */
+        /* border-width: 0.7mm; */
+        /* font-family: 'STIX Two Math', serif; */
+        letter-spacing: 0.5px;
+        font-size: 28px;
+        font-weight: 599;
+        background: transparent;
+        /* margin-left: 345px; */
+        /* margin-top: 30px; */
+        width: 250px;
+        /* height: 100px; */
+        /* margin-bottom: 50px; */
+    }
+
+    #entertAgenBranButton_01{
+          /* border-color: #212326; */
+        /* border-width: 0.7mm; */
+        /* font-family: 'STIX Two Math', serif; */
+        letter-spacing: 0.5px;
+        font-size: 28px;
+        font-weight: 599;
+        background: transparent;
+        margin-left: 45px;
+        /* margin-top: 30px; */
+        width: 250px;
+        /* height: 100px; */
+        /* margin-bottom: 50px; */
+
+    }
+
+        #entertAgenBranButton_Text{
+            /* text-align: center; */
+            font-size: 10px;
+            /* margin-left: 45px; */
+            /* margin-top: -40px; */
+        }
+
+        #entertAgenBranButton_Text_01{
+            /* text-align: center; */
+            font-size: 10px;
+            margin-left: 45px;
+            /* margin-top: -40px; */
+        }
+
+
+
+        #recomendt_ul{
+            width: 325px;
+            height: 350px;
+            margin-top: 50px;
+            /* margin-left: 345px; */
+        }
+        #recomendt_ul_01{
+            width: 325px;
+            height: 350px;
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+        
+        #recomendt_ul_02{
+            width: 325px;
+            height: 350px;
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+        
+        #recomendt_text{
+            font-family: 'STIX Two Math', serif;
+            font-size: 25px;
+            font-weight: 599;
+            line-height: 50px;
+        }
+
+    #ul_locations{
+        margin-left: 45px;
+        }
+        
+        #formTitle{
+        margin-left: 45px;
+        }
+        
+        #formButton{
+        margin-left: 45px;;
+        }
+        
+        #ul_form{
+        margin-left: 45px;;
+        }
+        
+        
+        #ul_botton_page_01{
+            margin-left: 80px;
+        }
+        
+        #ul_botton_page_02{
+            margin-left: 80px;
+        }
+        
+        
+        #Are_you_re h1{
+            font-size: 60px;
+            margin-left: 45px;
+            margin-top: 320px;
+            margin-bottom: 380px;
+        }
+
+        #cities_location_01{
+            margin-left: 95px;
+            
+        }
+        
+        #cities_location_02{
+            margin-left: 135px;
+            
+        }
+
+        #imgTripleCrown{              
+            width: 900px;                  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */           /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 45px;
+        }
+
+        #ul_whatIsTP_01{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 20px;
+        
+        }
+        
+        #ul_whatIsTP_02{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-left: 20px;
+        }
+
+        #ul_chooseStable_01{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            /* padding-left: 20px; */
+        }
+
+        #img_chooseStable{
+            width: 200px;
+            height: 200px;
+            /* padding-top: 40px; */
+        }
+        
+        #inner_div_WhIsTP{
+            width:300px;
+            height: 350px;
+        }
+        
+        #inner_div_WhIsTP li h2{
+            font-size: 20px;
+            /* font-weight: 599; 
+            margin-top: 30px;  */
+        }
+        
+        #inner_div_WhIsTP li h4{
+            font-size: 12px;
+            /* font-weight: 599;
+            margin-top: 30px;  */
+        }
+
+        #inner_div_interns{
+            width: 300px;
+            height: 600px;
+        }
+        
+        #inner_div_interns li h3{
+            font-size: 16px;
+            /* line-height: 1.6;
+            padding-top: 100px; */
+        }
+        
+        #internName{
+            font-size: 14px;
+            /* line-height: 1.6;
+            padding-top: 10px;
+            padding-left: 20px; */
+        }
+    
+}
+@media only screen and (max-width : 900px) {
+
+    
+    #main_img{
+        /* width:fit-content; */
+        width: 900px;
+        height: 1120px;
+    }
+
+    .textCentral{                               /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        left: 33%;
+    }
+
+    #gradientBar_home_img{
+        width:900px;
+    }
+    
+    #gradientBar{
+        /* width:fit-content; */
+        width: 900px;
+        height: 50px;
+    }
+
+    #gradientBar_interns{                       /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width:900px;
+    }
+
+    #entertAgenBran{
+        width: 900px;
+        /* height: 375px; */
+    }
+
+    #recomendt{
+        width: 900px;
+        height: 800px;
+    }
+
+    #home_contactUs{
+        width: 900px;
+        /* height: 250px; */
+    }
+
+    #home_contactUs_img{
+        width: 900px;
+        /* height: 250px; */
+    }
+        
+    #locations{
+        width: 900px;
+        height: 250px;
+    }
+
+    #ourIntership{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 900px;
+        height: 300px;
+    }
+
+    #tripleCrownDiv{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 900px;
+        /* height: 400px; */
+    }
+    
+    #experienceIsKing{                              /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 900px;
+        height: 450px;
+    }
+    
+    #whatIsTripleCrown{                             /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 900px;
+        height: 400px;
+    }
+
+    #internsComents{
+        width: 900px;
+        height: 900px;
+    }
+
+    #chooseStable{                                  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 900px;
+        /* height: 500px; */
+    }
+
+    #inTheSaddle{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 900px;
+        /* height: 250px; */
+    
+    }
+    
+
+    #formDiv{
+        width: 900px;
+        height: 750px;
+    }
+    
+    #bottomPage{
+        width: 900px;
+        height: 400px;
+    }
+    
+    .bg-light{
+        width: 900px;
+    }
+
+    #ul_li_label_form_01{
+        margin-left: 190px;
+        }
+
+    #input_text{
+        width: 266px;
+    }
+
+    textarea {
+        width: 820px;
+    }
+
+    /* //////////////////////////////////////// */
+
+    .textCentral_home h1{
+        font-size: 34px;
+        /* margin-left: 45px; */
+        /* line-height: 1.6; */
+    }
+
+    #entertAgenBranButton{
+        /* border-color: #212326; */
+        /* border-width: 0.7mm; */
+        /* font-family: 'STIX Two Math', serif; */
+        letter-spacing: 0.5px;
+        font-size: 22px;
+        /* font-weight: 599; */
+        background: transparent;
+        /* margin-left: 345px; */
+        /* margin-top: 30px; */
+        width: 200px;
+        /* height: 100px; */
+        /* margin-bottom: 50px; */
+    }
+
+        #entertAgenBranButton_Text{
+            /* text-align: center; */
+            font-size: 8px;
+            /* margin-top: -40px; */
+        }
+
+    #entertAgenBranButton{
+        /* border-color: #212326; */
+        /* border-width: 0.7mm; */
+        /* font-family: 'STIX Two Math', serif; */
+        letter-spacing: 0.5px;
+        font-size: 20px;
+        font-weight: 599;
+        background: transparent;
+        margin-left: 0px;
+        margin-top: 10px; 
+        width: 200px;
+        height: 75px;
+        /* margin-bottom: 50px; */
+
+    }
+
+
+    #entertAgenBranButton_01{
+        /* border-color: #212326; */
+        /* border-width: 0.7mm; */
+        /* font-family: 'STIX Two Math', serif; */
+        letter-spacing: 0.5px;
+        font-size: 20px;
+        font-weight: 599;
+        background: transparent;
+        margin-left: 15px;
+        margin-top: 10px;
+        width: 200px;
+        height: 75px;
+        /* margin-bottom: 50px; */
+
+    }
+
+        #entertAgenBranButton_Text{
+            /* text-align: center; */
+            font-size: 10px;
+            /* margin-left: 45px; */
+            /* margin-top: -40px; */
+        }
+
+        #entertAgenBranButton_Text_01{
+            /* text-align: center; */
+            font-size: 10px;
+            margin-left: 0px;
+            /* margin-top: -40px; */
+        }
+
+
+        #recomendt_ul{
+            width: 250px;
+            height: 350px;
+            margin-top: 50px;
+            /* margin-left: 345px; */
+        }
+        #recomendt_ul_01{
+            width: 250px;
+            height: 350px;
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+        
+        #recomendt_ul_02{
+            width: 250px;
+            height: 350px;
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+        
+        #recomendt_text{
+            font-family: 'STIX Two Math', serif;
+            font-size: 25px;
+            font-weight: 599;
+            line-height: 50px;
+        }
+
+
+    #ul_locations{
+        margin-left: 45px;
+        }
+        
+        #formTitle{
+        margin-left: 45px;
+        }
+        
+        #formButton{
+        margin-left: 45px;;
+        }
+        
+        #ul_form{
+        margin-left: 45px;;
+        }
+        
+        #ul_botton_page_01{
+            margin-left: -10px;
+        }
+        
+        #ul_botton_page_02{
+            margin-left: -10px;
+        }
+        
+        
+        #Are_you_re h1{
+            font-size: 60px;
+            margin-left: 45px;
+            margin-top: 320px;
+            margin-bottom: 380px;
+        }
+
+        #cities_location_01{
+            margin-left: 95px;
+            
+        }
+        
+        #cities_location_02{
+            margin-left: 135px;
+            
+        }
+    
+        #imgTripleCrown img{
+            width: 800px;                       /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            height: 200px; 
+        }
+
+        #text_experienceIsKing{                         /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            margin-right: 45px;
+        }
+
+        #ul_chooseStable_01{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            /* padding-left: 20px; */
+        }
+
+        #img_chooseStable{
+            width: 150px;
+            height: 150px;
+            /* padding-top: 40px; */
+        }
+        
+
+        #inner_div_WhIsTP{
+            width:250px;
+            height: 300px;
+        }
+        
+        #inner_div_WhIsTP li h2{
+            font-size: 20px;
+            /* font-weight: 599; 
+            margin-top: 30px;  */
+        }
+        
+        #inner_div_WhIsTP li h4{
+            font-size: 12px;
+            /* font-weight: 599;
+            margin-top: 30px;  */
+        }
+
+        #inner_div_interns{
+            width: 300px;
+            height: 500px;
+            /* padding-top: 20px; */
+        }
+        
+        #inner_div_interns li h3{
+            font-size: 16px;
+            /* line-height: 1.6; */
+            padding-top: 40px;
+        }
+        
+        #internName{
+            font-size: 14px;
+            /* line-height: 1.6; */
+            /* padding-top: 10px; */
+            /* padding-left: 20px; */
+    
+        }
+        
+        .inner_div_interns_03{
+            margin-top: -40px;    
+            margin-left: 150px;
+        }
+
+        .inner_div_interns_01{
+            margin-left: 60px;
+            /* margin-top: 10px; */
+        }
+
+        .inner_div_interns_02{
+            margin-left: 30px;
+            /* margin-top: -40px; */
+        }
+
+        .inner_div_interns_03{
+            margin-left: 250px;
+            /* margin-top: 0px; */
+        }
+    
+}
+
+@media only screen and (max-width : 700px) {
+    
+    #main_img{
+        /* width:fit-content; */
+        width: 700px;
+        height: 1120px;
+    }
+
+    .textCentral{                               /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        left: 39%;
+    }
+
+
+
+    /* ############################################################################## */
+    a, 
+    a:active, 
+    a:visited {
+		color: #87909e;
+        /* color: #fff; */
+	}
+
+	#menu-icon {
+        padding-top: 16px;
+		display:inline-block;
+        margin-left: 400px;
+        /* border-color: transparent; */
+	}
+
+    nav ul, 
+    nav:active ul { 
+		display: none;
+		position: absolute;
+		background: #fff;
+		right: 0;		
+		width: 100%;
+	}
+
+	nav li:last-of-type {
+		border-bottom: 0px;
+	}
+
+	nav ul li {
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		padding: 20px 0 20px 0;
+		/* background-color: red; */
+		border-bottom: 1px solid #fff;
+	}
+    .button:visited{
+        color: #fff;
+        
+    }
+
+	/*This makes sure the nav menu opens up */
+	nav:hover ul {
+		display: block;
+	}
+
+    /* ############################################################################ */
+
+    #gradientBar_home_img{
+        width:700px;
+    }
+
+
+    #gradientBar{
+        /* width:fit-content; */
+        width: 700px;
+        height: 50px;
+    }
+
+    #gradientBar_interns{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width:700px;
+    }
+
+    #entertAgenBran{
+        width: 700px;
+        height: 800px;
+    }
+
+    #recomendt{
+        width: 700px;
+        height: 1100px;
+    }
+
+    #home_contactUs_img{
+        width: 700px;
+        /* height: 250px; */
+    }
+
+    #home_contactUs{
+        width: 700px;
+        /* height: 250px; */
+    }
+        
+    #locations{
+        width: 700px;
+        height: 400px;
+    }
+
+    #ourIntership{                                   /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 700px;
+        /* height: ; */
+    }
+    
+    #tripleCrownDiv{                                /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 700px;
+        /* height: 400px; */
+    }
+
+    #experienceIsKing{                              /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 700px;
+        height: 550px;
+    }
+
+    #whatIsTripleCrown{                             /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 700px;
+        height: 900px;
+    }
+
+    #internsComents{
+        width: 700px;
+        height: 1400px;
+    }
+    
+    #chooseStable{                                  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 700px;
+        height: 2000px;
+    }
+
+    #inTheSaddle{                            /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+        width: 700px;
+        /* height: 250px; */
+    
+    }
+    
+
+    #formDiv{
+        width: 700px;
+        height: 750px;
+    }
+    
+    #bottomPage{
+        width: 700px;
+        height: 800px;
+    }
+    
+    .bg-light{
+        width: 700px;
+    }
+
+    #ul_li_label_form_01{
+        margin-left: 110px;
+        }
+
+    #input_text{
+        width: 183px;
+    }
+
+    textarea {
+        width: 570px;
+    }
+
+    .flex-container{
+        /* this allows the container to be flex*/
+        display:inline-block;
+        /* display: flex; */
+        /* display: block; */
+        flex-wrap: wrap;
+    }
+
+    #cities_location_01{
+        margin-left: 0px;
+        margin-top: -20px;
+        /* padding-top: 20px;
+        padding-bottom: 50px; */
+    }
+    
+    #cities_location_02{
+        margin-left: 0px;
+        margin-top: -20px;   
+    }
+
+
+    /* //////////////////////////////////////// */
+
+    #entertAgenBranButton{
+        border-color: #212326;
+        border-width: 0.7mm;
+        font-family: 'STIX Two Math', serif;
+        letter-spacing: 1px;
+        font-size: 30px;
+        font-weight: 599;
+        background: transparent;
+        margin-left: 100px;
+        /* margin-top: 30px; */
+        width: 350px;
+        height: 100px;
+        margin-bottom: 50px;
+        }
+        
+        #entertAgenBranButton_01{
+            border-color: #212326;
+            border-width: 0.7mm;
+            font-family: 'STIX Two Math', serif;
+            letter-spacing: 1px;
+            font-size: 30px;
+            font-weight: 599;
+            background: transparent;
+            margin-left: 100px;
+            /* margin-top: 30px; */
+            width: 350px;
+            height: 100px;
+            margin-bottom: 50px;
+            }
+        
+        #entertAgenBranButton_Text{
+            text-align: center;
+            font-size: 14px;
+            margin-top: -40px;
+            margin-left: 100px;
+        }
+        
+        #entertAgenBranButton_Text_01{
+            text-align: center;
+            font-size: 14px;
+            margin-top: -40px;
+            margin-left: 100px;
+        }
+
+
+        #recomendt_ul{
+            width: 600px;
+            height: 150px;
+            margin-top: 100px;
+            /* margin-left: 345px; */
+        }
+        #recomendt_ul_01{
+            width: 600px;
+            height: 150px;
+            margin-top: 150px;
+            margin-left: 50px;
+        }
+        
+        #recomendt_ul_02{
+            width: 600px;
+            height: 150px;
+            margin-top: 150px;
+            margin-left: 50px;
+        }
+        
+        #recomendt_text{
+            font-family: 'STIX Two Math', serif;
+            font-size: 25px;
+            font-weight: 599;
+            line-height: 50px;
+        }
+
+        #recomendtName01{
+            padding-top: 10px;
+        }
+        #recomendtName02{
+            padding-top: 10px;
+        }
+        
+        #recomendtName03{
+            padding-top: 10px;
+        }
+        
+
+
+    #ul_locations{
+        margin-left: 45px;
+        }
+        
+        #formTitle{
+        margin-left: 45px;
+        }
+        
+        #formButton{
+        margin-left: 45px;;
+        }
+        
+        #ul_form{
+        margin-left: 45px;;
+        }
+        
+        #ul_botton_page_01{
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+        
+        #ul_botton_page_02{
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+        
+        
+        #Are_you_re h1{
+            font-size: 60px;
+            margin-left: 45px;
+            margin-top: 320px;
+            margin-bottom: 380px;
+        }
+
+        #imgTripleCrown img{
+            width: 600px;                       /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */                    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+            height: 150px; 
+        }
+
+        #inner_div_WhIsTP{
+            width: 600px;
+            height: 250px;
+        }
+
+        #title_whatIsTP{
+            margin-top: 50px;
+        }
+
+        #ul_whatIsTP_00{
+            margin-top: 15px;
+        }
+        
+        #ul_whatIsTP_01{
+            margin-top: 15px;
+        }
+        
+        #ul_whatIsTP_02{
+            margin-top: 15px;
+        }
+
+        #img_chooseStable{
+            width: 400px;
+            height: 350px;
+            padding-top: 40px;
+            margin-left: 100px;
+            /* margin-right: 150px; */
+        }
+
+        #inner_div_chooseStable li h2{
+            margin-left: 100px;
+        }
+    
+        #ul_internscarousel_01{
+            margin-left: 0px;
+        }
+
+        .inner_div_interns_01{
+            margin-left: 175px;
+            margin-top: 10px;
+        }
+
+        .inner_div_interns_02{
+            margin-left: 175px;
+            margin-top: -40px;
+        }
+
+        .inner_div_interns_03{
+            margin-left: 175px;
+            margin-top: 0px;
+        }
+        
+}
+
+/* ####################### CAROUSEL ############################### */
+@keyframes scroll {
+	0% { transform: translateX(0%); }
+
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+/* // Styling */
+.slider {
+	background: transparent;
+    color: transparent;
+    background-color: transparent;
+	/* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: absolute;
+	width: 1900px;
+    /* margin-left: 345px;  */
+    margin-top: 40px;
+}
+
+.slide-track{
+    /* background: red; */
+    /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
+}
+	.slider::before,
+	.slider::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	.silder::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	.silder::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 40s linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+
+
+
+
+    /* ###################### Scroll top button ########################*/
+
+    #toTopBtn{
+        font-size: 20px;
+    }

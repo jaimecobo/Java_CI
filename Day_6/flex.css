@@ -1,0 +1,14 @@
+.flex-container{
+    /* this allows the container to be flex*/
+    display: flex;
+    /* display: block; */
+    flex-wrap: wrap;
+    background-color: dodgerblue;
+}
+
+.flex-container > div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}

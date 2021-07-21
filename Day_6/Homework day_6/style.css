@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #000;/*
+    padding: 20px 10px;*/
+  }
+  
+  /* Style the header links */
+  
+  .header a {
+    float: left;
+    color:white;
+    font-family: Oxygen;
+    font-size: 25px;
+    padding: auto;
+    /*
+    text-align: center;
+    /*
+    text-decoration: none;
+    /*
+    font-size: 18px;
+    /*
+    line-height: 25px;
+    
+    border-radius: 4px;
+    */
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+
+      background-color: red;
+      padding: 30px 30px;
+      font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  /* Float the link section to the right */
+  .header-left {
+    float: left;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  .buttons-left{
+      color:white;
+      background-color:black;
+      border-color: transparent;
+      padding-top: 25px;
+      margin-left: 20px;
+      font-weight: bold;
+    
+  }
+
+  .header-left{
+    /* this allows the container to be flex*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-left > div{
+    font-family: Oxygen;
+    font-size: 15px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+
+.buttons-right{
+    font-family: Oxygen;
+    font-size: 20px;
+    color:white;
+    background-color:black;
+    border-color: transparent;
+    padding-top: 25px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.header-right{
+  /* this allows the container to be flex*/
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.header-right table{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.form_button{
+    width: 30px;
+    background-color: red;
+    border-color: red;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    border-spacing: 0px;
+    border-style: none;
+ 
+}
+/*
+.form_button img{
+    width: 30px;
+}
+*/
+.lupa{
+    width: 25px;
+}
+
+#query{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 0;
+    border-spacing: 0px;
+    padding-top: 10px;
+
+}
+.shopcart-buttons-right{
+    font-family: Oxygen;
+    font-size: 15px;
+    font-weight: bold;
+    border-color: black;
+    background-color: black;
+    color: white;
+
+ 
+
+}
+.shopcart{
+    width: 15px;
+    background-color: black;
+}
+
+.button01{
+    font-family: Oxygen;
+    color:white;
+    background-color:black;
+    border-color: transparent;
+    padding-top: 25px;
+    margin-right: 0px;
+    font-weight: bold;
+}
+
+.button02{
+    font-family: Oxygen;
+    font-size: 15px;
+    color:white;
+    background-color:black;
+    border-color: transparent;
+    padding-top: 25px;
+
+    font-weight: bold;
+}
+
+.button03{
+    font-family: Oxygen;
+    font-size: 15px;
+    color:white;
+    background-color:black;
+    border-color: transparent;
+    padding-top: 25px;
+    margin: 0px;
+    font-weight: bold;
+
+}
+
+table tr td{
+    padding-top: 0;
+}
+
+
+/* FOOTER STYLING */
+
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #000;
+  }
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Dela Gothic One;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: Dela Gothic One;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }

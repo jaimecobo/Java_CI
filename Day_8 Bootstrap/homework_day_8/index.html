@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Homework day 8</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-primary">
+          <div class='container'>
+            <div class='row'>
+                <div class="col">
+                    <a class="navbar-brand" href="#">Try our new buttons =></a>
+                </div>
+                <div class='col'>
+                    <input id="clickMe" button type="button" class="btn btn-light" value="Do you want one more coffee?" onclick="coffeeCups();" />
+                </div>
+                <div class='col'>
+                    <input id="clickMe" type="button" class="btn btn-light" value="Does your car need an oil change?" onclick="carsMiles();" />
+                </div>
+                <div class='col'>
+                    <input id="clickMe" type="button" class="btn btn-light" value="[Extra] Is it odd or even?" onclick="odd_or_even();" />
+                </div>
+                <div class='col'>
+                    <button id='clickMe' type="button" class="btn btn-info" onClick="refreshPage()">Refresh</button>
+                </div>
+                
+            </div>
+        </div>
+      </nav>
+    
+    <h3 class="animate__animated animate__bounce">Click on <span>"Do you want one more coffee?"</span> and then <span>"Does your car need an oil change?"</span> buttons to reveal the challenges, codes and results.</h3>
+    
+    <table class='table table-borderless border-primary animate__animated animate__bounce'>
+        <!-- <th>Challenge 1</th>
+        <th>&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+        <th>Challenge 2</th> -->
+
+        <tr>
+            <td>
+                <div>
+                    <span id='odd_even0'></span>
+                    <span id='odd_even1'></span>
+                    <span id='odd_even2'></span>
+                    <span id='odd_even3'></span>
+                    <span id='odd_even4'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even5'></span>
+                    <span id='odd_even6'></span>
+                    <span id='odd_even7'></span>
+                    <span id='odd_even8'></span>
+                    <span id='odd_even9'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even10'></span>
+                    <span id='odd_even11'></span>
+                    <span id='odd_even12'></span>
+                    <span id='odd_even13'></span>
+                    <span id='odd_even14'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even15'></span>
+                    <span id='odd_even16'></span>
+                    <span id='odd_even17'></span>
+                    <span id='odd_even18'></span>
+                    <span id='odd_even19'></span>
+                </div>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                <div>
+                    <span id='odd_even20'></span>
+                    <span id='odd_even21'></span>
+                    <span id='odd_even22'></span>
+                    <span id='odd_even23'></span>
+                    <span id='odd_even24'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even25'></span>
+                    <span id='odd_even26'></span>
+                    <span id='odd_even27'></span>
+                    <span id='odd_even28'></span>
+                    <span id='odd_even29'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even30'></span>
+                    <span id='odd_even31'></span>
+                    <span id='odd_even32'></span>
+                    <span id='odd_even33'></span>
+                    <span id='odd_even34'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even35'></span>
+                    <span id='odd_even36'></span>
+                    <span id='odd_even37'></span>
+                    <span id='odd_even38'></span>
+                    <span id='odd_even39'></span>
+                </div>
+            </td>
+            <!-- <td></td> -->
+            <td> 
+                <div>
+                    <span id='odd_even40'></span>
+                    <span id='odd_even41'></span>
+                    <span id='odd_even42'></span>
+                    <span id='odd_even43'></span>
+                    <span id='odd_even44'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even45'></span>
+                    <span id='odd_even46'></span>
+                    <span id='odd_even47'></span>
+                    <span id='odd_even48'></span>
+                    <span id='odd_even49'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even50'></span>
+                    <span id='odd_even51'></span>
+                    <span id='odd_even52'></span>
+                    <span id='odd_even53'></span>
+                    <span id='odd_even54'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even55'></span>
+                    <span id='odd_even56'></span>
+                    <span id='odd_even57'></span>
+                    <span id='odd_even58'></span>
+                    <span id='odd_even59'></span>
+                </div>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                <div>
+                    <span id='odd_even60'></span>
+                    <span id='odd_even61'></span>
+                    <span id='odd_even62'></span>
+                    <span id='odd_even63'></span>
+                    <span id='odd_even64'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even65'></span>
+                    <span id='odd_even66'></span>
+                    <span id='odd_even67'></span>
+                    <span id='odd_even68'></span>
+                    <span id='odd_even69'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even70'></span>
+                    <span id='odd_even71'></span>
+                    <span id='odd_even72'></span>
+                    <span id='odd_even73'></span>
+                    <span id='odd_even74'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even75'></span>
+                    <span id='odd_even76'></span>
+                    <span id='odd_even77'></span>
+                    <span id='odd_even78'></span>
+                    <span id='odd_even79'></span>
+                </div>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                <div>
+                    <span id='odd_even80'></span>
+                    <span id='odd_even81'></span>
+                    <span id='odd_even82'></span>
+                    <span id='odd_even83'></span>
+                    <span id='odd_even84'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even85'></span>
+                    <span id='odd_even86'></span>
+                    <span id='odd_even87'></span>
+                    <span id='odd_even88'></span>
+                    <span id='odd_even89'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even90'></span>
+                    <span id='odd_even91'></span>
+                    <span id='odd_even92'></span>
+                    <span id='odd_even93'></span>
+                    <span id='odd_even94'></span>
+            </td>
+            <!-- <td></td> -->
+            <td>
+                    <span id='odd_even95'></span>
+                    <span id='odd_even96'></span>
+                    <span id='odd_even97'></span>
+                    <span id='odd_even98'></span>
+                    <span id='odd_even99'></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class='table_col' colspan="9">
+                <div id='CofCups00'></div>
+                <div id='CofCups011'></div>
+                <div id='CofCups021'></div>
+                <div id='CofCups012'></div>
+                <div id='CofCups022'></div>
+                <div id='CofCups013'></div>
+                <div id='CofCups023'></div>
+                <div id='CofCups03'></div>
+                <br><br><br><br><br><br><br><br><br>
+            </td>
+            <td>
+                <br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br>
+            </td>
+            
+            <td class='table_col' colspan="10">
+                <div id='carMls00'></div>
+                <div id='carMls01451'></div>
+                <div id='carMls02451'></div>
+                <div id='carMls01461'></div>
+                <div id='carMls02461'></div>
+                <div id='carMls01471'></div>
+                <div id='carMls02471'></div>
+                <div id='carMls01481'></div>
+                <div id='carMls02481'></div>
+                <div id='carMls01491'></div>
+                <div id='carMls02491'></div>
+                <div id='carMls01501'></div>
+                <div id='carMls03'></div>
+                </td>
+        </tr>
+        
+    </table>
+
+
+    <!-- <div id="page-container">
+        <div id="content-wrap">
+        </div>
+        <footer id="footer"></footer>
+      </div> -->
+
+    <footer class="container-fluid footer">
+
+
+        <div class="row">
+          <div class="col-md-4">© TTS Challenges </div>
+          <div class="col-md-4 content-wrap">
+            <ul class="nav nav-pills">
+              <li><a href="#">Contact Us &#124; </a></li>
+              <li><a href="#">Get Support &#124; </a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="text-right"><a href="#">Follow Us</a></p>
+          </div>
+        </div>
+      </footer>
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
+
+
+
+
+

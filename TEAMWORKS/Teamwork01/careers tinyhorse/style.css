@@ -1,0 +1,181 @@
+.jumbo {
+  /* change image, stick it to the top */
+  /* remove gutters/padding */
+  /* put a bottom border on jumbotron, add gradiant color */
+
+  background-image: url(https://tinyhorse.com/wp-content/uploads/2019/12/Careers-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 700px;
+  margin: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 0px;
+}
+
+#gradient {
+  background-image: url(https://raw.githubusercontent.com/jaimecobo/TechTalentSouth/master/TEAMWORKS/Teamwork01/Tiny-Horse-Agency-Gradient.jpg);
+  padding: 0px 0px 0px 0px;
+  min-width: none;
+  min-height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center block;
+}
+
+.col {
+  min-height: 150px;
+  background-color: white;
+  padding: 4rem 5rem;
+}
+.jumbo h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* still need to fix the underline on the Home link */
+.navbar ul li:hover {
+  border-bottom: 2px solid red;
+}
+
+.active {
+  border-bottom: 2px solid red;
+}
+
+
+
+@media (min-width: 1150px) {
+  .img {
+    background-repeat: no-repeat;
+    background-size: 72rem;
+    max-width: 150rem;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 72rem;
+    z-index: -1;
+    
+  }
+} 
+
+@media (min-width: 1150px) {
+  .benefits-image .img {
+    left: 24%;
+  }
+}
+
+
+
+.card-body {
+  background-color: rgb(223, 202, 202);
+  overflow: hidden;
+  border-top-width: 10px;
+  border-color: rgb(227, 84, 67);
+  border-radius: 0px 0px 0px 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  width: 100%;
+  height: 30rem;
+}
+
+
+
+@media (min-width: 900px) {
+  .card .card-body{
+    width: 30rem; 
+    height: 30rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .culture-card {
+    position:absolute;
+    left:65%;
+    top: 165%;
+  }
+}
+
+@media (min-width: 900px) {
+  .benefits-card {
+    position:absolute;
+    top:262%;
+  }
+}
+
+.gap {
+  background-color: white;
+  height: 70px;
+}
+
+@media (max-width: 900px){
+  .gap {
+    height:0px
+  }
+}
+      /* jobs n such */
+
+.locale {
+  color: red;
+}
+
+.job-link {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.openings {
+  padding-top: 15rem;
+  padding-bottom: 3rem;
+}
+
+.all-open {
+  padding-left: 4rem;
+}
+
+.btn-lg {
+  position: fixed;
+  right: 45px;
+  bottom: 40px;
+  z-index: 99;
+  text-decoration: none;
+  color: rgb(151, 154, 156);
+}
+
+
+
+.career {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-color:rgb(151, 154, 156)
+}
+
+.row {
+  border-top-width: 5px;
+  border-color:rgb(151, 154, 156)
+}
+
+}
+.intern {
+  text-align: left;
+}
+
+.intern .col {
+  padding-left: 64px;
+}
+
+.intern-link {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
