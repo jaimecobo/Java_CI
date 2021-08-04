@@ -4,12 +4,12 @@ import java.util.Random;
 
 public class LotteryNumbers {
 
-    final static int numOfLottoBalls = 5;
+    final static int NUM_OF_LOTTO_BALLS = 5;
 //    final static int minBall = 1;
-    final static int max_nonMagicBall = 65;
-    final static int maxMagicBall = 75;
+    final static int MAX_NON_MAGIC_BALL_VALUE = 65;
+    final static int MAX_MAGIC_BALL_VALUE = 75;
     static int MagicBallItSelf = 0;
-    static int[] lottoArray = new int[numOfLottoBalls];
+    static int[] lottoArray = new int[NUM_OF_LOTTO_BALLS];
 
 
         public static void magicBall(int j_number, int l_number){
@@ -19,15 +19,15 @@ public class LotteryNumbers {
             int magicBall;
             Random rand = new Random();
             if((j_number%2==0) && (l_number%2 != 0)){
-                magicBall = rand.nextInt(maxMagicBall)+1;
+                magicBall = rand.nextInt(MAX_MAGIC_BALL_VALUE)+1;
                 magicBall += j_number - l_number;
-                if(magicBall > maxMagicBall){
+                if(magicBall > MAX_MAGIC_BALL_VALUE){
                     magicBall(j_number, l_number);
                 }else MagicBallItSelf = Math.abs(magicBall);
             }else{
-                magicBall = rand.nextInt(maxMagicBall)+1;
+                magicBall = rand.nextInt(MAX_MAGIC_BALL_VALUE)+1;
                 magicBall += l_number - j_number;
-                if(magicBall > maxMagicBall){
+                if(magicBall > MAX_MAGIC_BALL_VALUE){
                     magicBall(j_number, l_number);
                 }else MagicBallItSelf = Math.abs(magicBall);
             }
@@ -37,7 +37,7 @@ public class LotteryNumbers {
 
         public static void ballsValues01(int number){
             Random rand = new Random();
-            int ball = rand.nextInt(max_nonMagicBall)+1;
+            int ball = rand.nextInt(MAX_NON_MAGIC_BALL_VALUE)+1;
             ball = ball + number;
             ball = ball / number;
 //            System.out.println("ball is = " + ball);
@@ -52,7 +52,7 @@ public class LotteryNumbers {
 
         public static void ballsValues02(int number){
             Random rand = new Random();
-            int ball = rand.nextInt(max_nonMagicBall)+1;
+            int ball = rand.nextInt(MAX_NON_MAGIC_BALL_VALUE)+1;
             ball = ball + number;
             ball = ball / 2;
             ball = ball + 3;
@@ -100,8 +100,8 @@ public class LotteryNumbers {
                     ball = 43;
                 }else ball = 61;
             }
-            ball = ball * max_nonMagicBall;
-            ball = ball / maxMagicBall;
+            ball = ball * MAX_NON_MAGIC_BALL_VALUE;
+            ball = ball / MAX_MAGIC_BALL_VALUE;
             if(ball <= 0){
                 ball = rand.nextInt(56-36)+36;
             }else lottoArray[3] = ball;
@@ -111,8 +111,8 @@ public class LotteryNumbers {
     public static void ballsValues05(int number){
         Random rand = new Random();
         int ball = 0;
-        int num1 = rand.nextInt(max_nonMagicBall)+1;
-        int num2 = rand.nextInt(max_nonMagicBall)+1;
+        int num1 = rand.nextInt(MAX_NON_MAGIC_BALL_VALUE)+1;
+        int num2 = rand.nextInt(MAX_NON_MAGIC_BALL_VALUE)+1;
         num1 *= num2;
         ball = num1 / number;
         if(ball == 0){
