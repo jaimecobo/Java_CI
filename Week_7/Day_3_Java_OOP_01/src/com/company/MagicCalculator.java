@@ -23,9 +23,9 @@ public class MagicCalculator {
             return -1;
         else if(number == 0)
             return 1;
-        else {
+        else
             number = (number * findFactorial(number - 1));
-        }
+
         return number;
 
     }
