@@ -1,7 +1,6 @@
 package com.company;
-import com.company.Calculator;
 
-public class MagicCalculator {
+public class MagicCalculator extends Calculator{
     public static double findSquareRoot(double number){
         return Math.sqrt(number);
     }

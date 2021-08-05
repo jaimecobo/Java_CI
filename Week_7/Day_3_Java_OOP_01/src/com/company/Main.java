@@ -14,5 +14,6 @@ public class Main {
         System.out.println("The cosine of 63 is " + MagicCalculator.findCosine(63 ));
         System.out.println("The tangent of 63 is " + MagicCalculator.findTangent(63 ));
         System.out.println("The factorial of 63 is " + MagicCalculator.findFactorial(63 ));
+        System.out.println("The addition of 39 & 67 using MagicCalculator is " + MagicCalculator.add( 39, 67));
     }
 }
