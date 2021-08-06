@@ -7,9 +7,6 @@ public class Pet {
     private String type;
 
     public Pet() {
-        name = "";
-        location = "";
-        type = "";
     }
 
     public Pet(String name, String location, String type) {
