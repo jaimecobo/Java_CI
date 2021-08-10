@@ -44,7 +44,6 @@ public class Library extends Book{
         return officeHours;
     }
 
-
     public void addBook(Book book){
         this.inventory.add(book);
     }
@@ -56,6 +55,44 @@ public class Library extends Book{
     public void printAddress(){
         System.out.println(this.address);
     }
+
+    public void borrowBook(String title){
+        boolean inStock = false;
+        for (Book book : this.inventory) {
+            if(book.title.equals(title)){
+                inStock = true;
+                if(!book.borrowed){
+                    System.out.println("You successfully borrowed " + title);
+                    book.borrowed = true;
+                }
+                else System.out.println("Sorry, this book is already borrowed.");
+            }
+        }
+        if(!inStock){
+            System.out.println("Sorry, this book is not in our catalog.");
+        }
+    }
+
+    public void printAvailableBooks(){
+        if(this.inventory.isEmpty()) {
+            System.out.println("No book in catalog.");
+        }else{
+            for (Book book : this.inventory) {
+                if(!book.borrowed){
+                    System.out.println(book.title);
+                }
+            }
+        }
+    }
+
+    public void returnBook(String title){
+        for (Book book : this.inventory) {
+            if(book.title.equals(title)){
+                book.borrowed = false;
+                System.out.println("You successfully returned " + title);
+                }
+            }
+        }
 
     @Override
     public String toString() {
