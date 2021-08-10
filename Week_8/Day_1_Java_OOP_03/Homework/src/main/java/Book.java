@@ -1,9 +1,9 @@
 
 public class Book {
 
-    private String title;
-    private String author;
-    private boolean borrowed;
+    public String title;
+    public String author;
+    public boolean borrowed;
 
     public Book() {
     }
@@ -56,5 +56,12 @@ public class Book {
         return book.borrowed;
     }
 
-
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", borrowed=" + borrowed +
+                '}';
+    }
 }
