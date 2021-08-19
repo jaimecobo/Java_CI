@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<html lang="en">-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>
+    Hello from a static index page!
+</h1>
+
+<img src="https://via.placeholder.com/150">
+
+<!--
+     to make a link to our second.html, we need to
+     add an anchor tag that references the relative path
+     to the html file
+-->
+
+<!--
+    here we will need to add a form
+    this form will accept user input and do something with it
+    perhaps we can build a customer from user input?
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+-->
+
+
+<form class="form-horizontal" action="#" th:action="@{/}" th:object="${customer}" method="post">
+    <table>
+        <tr>
+            <td label class="label label-primary">First Name:</td>
+            <td><input type="text" th:field="*{firstName}" /></td>
+        </tr>
+
+        <tr>
+            <td label class="label label-primary">Last Name:</td>
+            <td><input type="text" th:field="*{lastName}" /></td>
+        </tr>
+
+        <tr class="blank_row"><td colspan="3"></td></tr>
+        <tr><td></td><td colspan=2 align="center"><input class="btn btn-info btn-lg" type="submit" name="submit" value="&nbsp&nbsp Submit &nbsp&nbsp"></td></tr>
+
+    </table>
+</form>
+
+</body>
+</html>
