@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <div th:replace="fragments/style"></div>
+    <title>Address Book Deleted</title>
 </head>
 <body>
-$END$
+    <div th:replace="fragments/navbar"></div>
+
+    <div><h1>((( ADDRESS BOOK DELETED )))</h1></div>
+
+    <a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
+    <a th:href="@{/newEntry}"><button class="btn btn-primary">Submit a New Entry</button></a>
+
+    <div th:replace="fragments/body"></div>
+
 </body>
 </html>
