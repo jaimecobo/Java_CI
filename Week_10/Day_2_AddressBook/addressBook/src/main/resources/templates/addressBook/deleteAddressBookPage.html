@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
 <head>
     <meta charset="UTF-8">
+    <div th:replace="fragments/style"></div>
     <title>Book deleted</title>
 </head>
 <body>
-BOOK DELETED
-<div class="container">
-    <h2>Delete Entire Address Book</h2>
-    <form action="#" th:action="@{/deleteAddressBook}" th:object="${entry}" method="get">
-        <div class="form-group">
-            <input type="password" class="form-control" id="pass" name="password" placeholder="Password" th:field="*{password}">
-        </div>
-        <button class="btn btn-primary">DELETE</button>
-    </form>
-</div>
 
+    <div th:replace="fragments/navbar"></div>
+
+    <div class="container">
+        <h2>Delete Entire Address Book</h2>
+        <form action="deleteAddressBook" method="post">
+<!--        <form action="deleteAddressBook" th:action="@{/deleteAddressBook}" method="post">-->
+            <div class="form-group">
+                <input type="password" class="form-control" id="pass" name="password" placeholder="Password" required>
+                <p th:if="${errorMessage}" class="error">Incorrect password</p>
+            </div>
+            <button class="btn btn-primary">DELETE</button>
+        </form>
+
+        <div>&nbsp</div>
+
+        <div>
+            <a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
+            <a th:href="@{/newEntry}"><button class="btn btn-primary">Submit a New Entry</button></a>
+        </div>
+
+    </div>
+
+
+        <div th:replace="fragments/body"></div>
 </body>
 </html>
