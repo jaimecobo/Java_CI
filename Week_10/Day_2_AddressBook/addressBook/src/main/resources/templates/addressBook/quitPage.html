@@ -12,14 +12,16 @@
 
 <div class="container">
   <h2>Quit Application</h2>
-  <h2>Are you sure you want to completely close the App</h2>
+
+  <div class="d-flex justify-content-center">
+    <h2>Are you sure you want to completely close the App?</h2>
+  </div>
 
   <div>&nbsp</div>
 
-  <div>
-    <a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
-    <a th:href="@{/quit}"><button class="btn btn-primary">Quit App</button></a>
-  </div>
+  <a th:href="@{/}"><button type="button" class="btn btn-success pull-left">Back To Home Page</button></a>
+  <a th:href="@{/quitApp}" ><button type="button" class="btn btn-danger pull-right">Quit App</button></a>
+
 
 </div>
 
