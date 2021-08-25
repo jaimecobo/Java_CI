@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+    <div th:replace="fragments/style"></div>
+</head>
+<body>
+<div th:replace="fragments/navbar"></div>
+<div class="container">
+
+    <h3>The entry has been removed!</h3>
+
+
+    <a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
+    <a th:href="@{/newEntry}"><button class="btn btn-primary">Submit a New Entry</button></a>
+
+</div>
+<div th:replace="fragments/body"></div>
+<!--<script src="../../webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--<script src="../../webjars/jquery/1.9.1/jquery.min.js"></script>-->
+</body>
+</html>
+
+<div class="container">
+
+    <h2>Search by Email Address</h2>
+    <form action="#" th:action="@{/searchEmail}" th:object="${entry}" method="get">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Email Address" th:field="*{emailAddress}">
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </form>

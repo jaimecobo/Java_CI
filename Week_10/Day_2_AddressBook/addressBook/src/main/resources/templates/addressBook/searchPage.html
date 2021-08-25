@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <div th:replace="fragments/style"></div>
+</head>
+<body>
+<div th:replace="fragments/navbar"></div>
+
+<div class="container">
+
+    <h2>Search by Email Address</h2>
+    <form action="#" th:action="@{/searchEmail}" th:object="${entry}" method="get">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Email Address" th:field="*{emailAddress}">
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </form>
+
+    <h2>Search by First Name</h2>
+    <form action="#" th:action="@{/searchFirstName}" th:object="${entry}" method="get">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="First Name" th:field="*{firstName}">
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </form>
+
+    <h2>Search by Last Name</h2>
+    <form action="#" th:action="@{/searchLastName}" th:object="${entry}" method="get">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Last Name" th:field="*{lastName}">
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </form>
+
+    <h2>Search by Phone Number</h2>
+    <form action="#" th:action="@{/searchPhoneNumber}" th:object="${entry}" method="get">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Phone Number" th:field="*{phoneNumber}">
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </form>
+
+
+
+<!--    <p>Please select how you would like to run the search and then enter the data: </p>-->
+<!--    <form action="#" th:action="@{/entries}" th:object="${entry}" method="post">-->
+
+<!--        <div class="form-group">-->
+<!--            <input type="text" class="form-control" placeholder="First Name" th:field="*{firstName}">-->
+<!--        </div>-->
+
+<!--        <div class="form-group">-->
+<!--            <input type="text" class="form-control" placeholder="Last Name" th:field="*{lastName}">-->
+<!--        </div>-->
+
+<!--        <div class="form-group">-->
+<!--            <input type="text" class="form-control" placeholder="Phone Number" th:field="*{phoneNumber}">-->
+<!--        </div>-->
+
+<!--        <div class="form-group">-->
+<!--            <input type="text" class="form-control" placeholder="Email Address" th:field="*{emailAddress}">-->
+<!--        </div>-->
+
+<!--        <button class="btn btn-primary">Submit Your Entry</button>-->
+
+
+<!--    </form>-->
+</div>
+
+<!-- Entry that match email address -->
+<!--<ul>-->
+<!--    <li>-->
+<!--        <span th:text="${entryMatchEmail}"></span>-->
+<!--    </li>-->
+<!--</ul>-->
+
+<div th:replace="fragments/body"></div>
+
+</body>
+</html>
