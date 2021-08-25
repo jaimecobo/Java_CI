@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <div th:replace="fragments/style"></div>
+    <title>Home</title>
 </head>
 <body>
-$END$
+
+    <div th:replace="fragments/navbar"></div>
+
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <a th:href="@{/newEntry}"><h3> 1) Add an entry </h3></a>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a th:href="@{/remove}"><h3> 2) Remove an entry </h3></a>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a th:href="@{/searchPage}"><h3> 3) Search for a specific entry </h3></a>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a th:href="@{/addressBook}"><h3> 4) Print Address Book </h3></a>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a th:href="@{/deleteAddressBookPage}"><h3> 5) Delete Book </h3></a>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a th:href="@{/quit}"><h3> 6) Quit </h3></a>
+        </div>
+
+        <div th:replace="fragments/body"></div>
+    </div>
+
 </body>
 </html>
