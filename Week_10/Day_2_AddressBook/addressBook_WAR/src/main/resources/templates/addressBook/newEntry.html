@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>New Entry</title>
+
+  <div th:replace="fragments/style"></div>
+</head>
+<body>
+  <div th:replace="fragments/navbar"></div>
+
+  <div class="container">
+    <p>Please use the form below to submit a new Entry: </p>
+    <form action="#" th:action="@{/entries}" th:object="${entry}" method="post">
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="First Name" th:field="*{firstName}" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Last Name" th:field="*{lastName}" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Phone Number" th:field="*{phoneNumber}" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Email Address" th:field="*{email}" required>
+        <p th:if="${emailError}" class="error">That email already exist</p>
+      </div>
+
+      <button class="btn btn-primary">Submit Your Entry</button>
+
+
+    </form>
+
+    <div>&nbsp</div>
+
+    <div>
+      <a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
+    </div>
+
+
+  </div>
+
+  <div th:replace="fragments/body"></div>
+
+</body>
+</html>

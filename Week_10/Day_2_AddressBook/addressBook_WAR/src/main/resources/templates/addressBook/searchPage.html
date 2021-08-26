@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <div th:replace="fragments/style"></div>
+</head>
+<body>
+<div th:replace="fragments/navbar"></div>
+
+<div class="container">
+
+    <h2>Search by Email Address</h2>
+    <form action="#" th:action="@{/searchEmail}" th:object="${entry}" method="get">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Email Address" th:field="*{email}" required>
+            <p th:if="${searchEmailMessage}" class="error">No entry was found with that value.</p>
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </form>
+    <div>&nbsp</div>
+
+    <h2>Search by First Name</h2>
+    <form action="#" th:action="@{/searchFirstName}" th:object="${entry}" method="get">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="First Name" th:field="*{firstName}" required>
+            <p th:if="${searchFirstNameMessage}" class="error">No entry was found with that value.</p>
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </form>
+    <div>&nbsp</div>
+
+    <h2>Search by Last Name</h2>
+    <form action="#" th:action="@{/searchLastName}" th:object="${entry}" method="get">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Last Name" th:field="*{lastName}" required>
+            <p th:if="${searchLastNameMessage}" class="error">No entry was found with that value.</p>
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </form>
+    <div>&nbsp</div>
+
+    <h2>Search by Phone Number</h2>
+    <form action="#" th:action="@{/searchPhoneNumber}" th:object="${entry}" method="get">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Phone Number" th:field="*{phoneNumber}" required>
+            <p th:if="${searchPhoneNumberMessage}" class="error">No entry was found with that value.</p>
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </form>
+
+    <div>&nbsp</div>
+
+    <div class="d-flex justify-content-center">
+        <span><a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a></span>
+        <span>&nbsp</span>
+        <span><a th:href="@{/newEntry}"><button class="btn btn-primary">Submit a New Entry</button></a></span>
+    </div>
+
+</div>
+
+
+<div th:replace="fragments/body"></div>
+
+</body>
+</html>

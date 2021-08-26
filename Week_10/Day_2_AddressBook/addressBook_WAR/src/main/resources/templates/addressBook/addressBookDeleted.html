@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <div th:replace="fragments/style"></div>
+    <title>Address Book Deleted</title>
+</head>
+<body>
+    <div th:replace="fragments/navbar"></div>
+
+    <div class="container">
+        <div class="d-flex justify-content-center"><h1>((( ADDRESS BOOK DELETED )))</h1></div>
+
+        <div>&nbsp</div>
+
+        <div class="d-flex justify-content-center">
+            <span><a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a></span>
+            <span>&nbsp</span>
+            <span><a th:href="@{/newEntry}"><button class="btn btn-primary">Submit a New Entry</button></a></span>
+        </div>
+    </div>
+
+
+    <div th:replace="fragments/body"></div>
+
+</body>
+</html>

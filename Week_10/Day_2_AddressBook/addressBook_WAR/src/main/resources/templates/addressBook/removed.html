@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+    <div th:replace="fragments/style"></div>
+</head>
+<body>
+    <div th:replace="fragments/navbar"></div>
+
+    <div class="container">
+
+        <h4>Entry:</h4>
+
+        <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+            </tr>
+
+            <tr th:each="entry : ${searches}">
+                <td th:text="${entry.id}"></td>
+                <td th:text="${entry.email}"></td>
+                <td th:text="${entry.firstName}"></td>
+                <td th:text="${entry.lastName}"></td>
+                <td th:text="${entry.phoneNumber}"></td>
+            </tr>
+        </table>
+        <h4>Has been removed!</h4>
+
+
+        <a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
+        <a th:href="@{/newEntry}"><button class="btn btn-primary">Submit a New Entry</button></a>
+
+    </div>
+    <div th:replace="fragments/body"></div>
+
+</body>
+</html>
