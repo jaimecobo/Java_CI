@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    background-color: blue;
+}
+
+#div01{
+    width: 25%;
+}
+
+#div02{
+    width: 50%;
+}
+
+#div03{
+    width: 25%;
+}
+
+p{
+    /* background-color: blue; */
+    color:blanchedalmond;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 48px;
+}
+h1{
+    color:blanchedalmond;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 48px;
+}
+
+}

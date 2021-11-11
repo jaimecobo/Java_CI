@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON_Movies</title>
+</head>
+<body>
+
+    <script>
+        class Movie {
+            movieTitle = "";
+            movieImg = "";
+            movieLink01 = "";
+            movieLink02 = "";
+            movieLink03 = "";
+            movieLink04 = "";
+            movieTrailer = "";
+
+            constructor(title, image, link01, link02, link03, link04, trailer) {
+            this.movieTitle = title;
+            this.movieImg = image;
+            this.movieLink01 = link01;
+            this.movieLink02 = link02;
+            this.movieLink03 = link03;
+            this.movieLink04 = link04;
+            this.movieTrailer = trailer;
+            }
+        }
+
+
+        class ArrayOfMovies {
+            moviesArray = [];
+
+            constructor(){}
+
+            feedCollection = function(movie){
+                this.moviesArray.push(movie);
+            }
+        }
+
+  
+        class CatalogOfMovies{
+            collectionsArray =[];
+
+            constructor(){}
+
+            feedCatalog = function(ArrayOfMovies) {
+                this.collectionsArray.push(ArrayOfMovies);
+            }
+        }
+
+        let data_1= [];
+        let movie;
+        let new_ArrayOfMovies = new ArrayOfMovies();
+        let newCatalog = new CatalogOfMovies();
+
+        (async () => {
+            const res = await fetch('movies01.json', {
+            headers: { Accept: 'application/json' },
+            });
+            const json = await res.json();
+            console.log("***** JSON *****");
+            console.log(json)
+            console.log("***** JSON *****");
+
+            Object.entries(json).forEach((obj) => {
+                data_1.push(obj);
+            });
+            
+            console.log(" THIS IS DATA OBJ ");
+            console.log("==================");
+            for(let i=0; i<data_1.length; i++){
+                console.log("The Object at index " + i + " is:");
+                console.log(data_1[i]);
+                console.log("TITLE = " + data_1[i][1].title);
+                console.log("IMAGE = " + data_1[i][1].image);
+                console.log("LINK_1 = " + data_1[i][1].movieLinks[0]);
+                movie = new Movie(data_1[i][1].title, data_1[i][1].image, data_1[i][1].movieLinks[0], data_1[i][1].movieLinks[1], 
+                    data_1[i][1].movieLinks[2], data_1[i][1].movieLinks[3], data_1[i][1].movieLinks[4]);
+                console.log("-----------------------------------------------");
+                console.log("THE MOVIE IS = " + movie.movieTitle + " -- IMAGE = " + movie.movieImg + " (Info from movie Object)");
+                createCollection(movie);
+                console.log("########################################################################################################");
+                console.log("");
+
+            } 
+            printCatalog();
+            console.log(data_1);
+        })();
+
+
+
+
+        function createCollection(Movie){
+            new_ArrayOfMovies.feedCollection(movie);
+            if(new_ArrayOfMovies.moviesArray.length === 6){
+                console.log("");
+                console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                console.log("+++++++++++++++ THIS IS A NEW ARRAY OF MOVIES +++++++++++++++++")
+                for(let i = 0; i < 6; i++){
+                console.log("Title = " + new_ArrayOfMovies.moviesArray[i].movieTitle);
+                console.log("Image = " + new_ArrayOfMovies.moviesArray[i].movieImg);
+                console.log("Trailer = " + new_ArrayOfMovies.moviesArray[i].movieTrailer);
+                console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                }
+                console.log("++++++++++++++ THE END OF THIS ARRAY OF MOVIES ++++++++++++++++")
+                console.log("......................................................");
+                newCatalog.feedCatalog(new_ArrayOfMovies.moviesArray);
+                new_ArrayOfMovies.moviesArray = [];
+            }
+            
+        }
+
+
+
+        function printCatalog(){
+            console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            console.log(" *** OBJECT NEW_CATALOG AS IS*** ")
+            console.log(newCatalog);
+            console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+            console.log(" *** NEW_CATALOG STRINGTIFIED *** ")
+            console.log(JSON.stringify(newCatalog));
+            console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+            console.log("");
+            console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            console.log("THIS IS THE FULL CATALOG")
+            console.log("Length of newCatalog = " + newCatalog.collectionsArray.length);
+            console.log("");
+            console.log("NEW_CATALOG [0]");
+            console.log(newCatalog.collectionsArray[0]);
+            console.log("");
+            console.log("NEW_CATALOG [1]");
+            console.log(newCatalog.collectionsArray[1]);
+            console.log("");
+            console.log("NEW_CATALOG [1] STRINGTIFIED");
+            console.log(JSON.stringify(newCatalog.collectionsArray[1]));
+            console.log("");
+            for(let i = 0; i < newCatalog.collectionsArray.length; i++){
+                console.log("*** COLLECTION " + i + " ***");
+                for(let j = 0; j < 6; j++){
+                    console.log("The movie " + j + " is = " + newCatalog.collectionsArray[i][j].movieTitle)
+                }
+                console.log("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+            }
+            console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            console.log("$$$$$ ARRAY 0 $$$$$");
+            console.log(newCatalog.collectionsArray[0]);
+            console.log("$$$$$ ARRAY 1 $$$$$");
+            console.log(newCatalog.collectionsArray[1]);
+            console.log("$$$$$ ARRAY 0 & 1 $$$$$");
+            console.log(newCatalog.collectionsArray);
+        }
+    </script>
+    
+</body>
+</html>

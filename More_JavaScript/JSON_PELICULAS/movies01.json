@@ -1,0 +1,183 @@
+[
+    {
+      "title": "BLACK WIDOW",
+      "image": "src_BLACK_WIDOW",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/Fp9pNPdNwjI"
+      ],
+      "genres": [
+        "Action",
+        "Adventure"
+      ]
+    },
+    
+     {
+      "title": "THE SUICIDE SQUAD",
+      "image": "src_THE_SUICIDE_SQUAD",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/uwCNNdkqHmA"
+      ],
+      "genres": [
+        "Action",
+        "Adventure"
+      ]
+    },
+     {
+      "title": "CRUELLA",
+      "image": "src_CRUELLA",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/gmRKv7n2If8"
+      ],
+      "genres": [
+        "Disney",
+        "Comedy"
+      ]
+    }, 
+    {
+      "title": "JUNGLE CRUISE",
+      "image": "src_JUNGLE_CRUISE",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/tvTIzMyLFSg"
+      ],
+      "genres": [
+        "Action",
+        "Adventure"
+      ]
+    }, 
+    {
+      "title": "F9",
+      "image": "src_F9",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/fEE4RO-_jug"
+      ],
+      "genres": [
+        "Crime",
+        "Thriller"
+      ]
+    }, 
+    {
+      "title": "SPACE JAM",
+      "image": "src_SPACE_JAM",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/6Z3cagyeoIw"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Sports"
+      ]
+    }, 
+    {
+      "title": "SKATER GIRL",
+      "image": "src_SKATER_GIRL",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/k5Fn99wmFCQ"
+      ],
+      "genres": [
+        "Deporte",
+        "Drama",
+        "Familia"
+      ]
+    }, 
+    {
+      "title": "WISH DRAGON",
+      "image": "src_WISH_DRAGON",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/uWIRyU5fuzU"
+      ],
+      "genres": [
+        "Fantasy"
+      ]
+    }, 
+    {
+      "title": "INFINITE",
+      "image": "src_INFINITE",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/_WWEOCQGxSw"
+      ],
+      "genres": [
+        "Action"
+      ]
+    }, 
+    {
+      "title": "NEWS OF THE WORLD",
+      "image": "src_NEWS_OF_THE_WORLD",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/zTZDb_iKooI"
+      ],
+      "genres": [
+        "Western"
+      ]
+    }, 
+    {
+      "title": "THE INTERSHIP",
+      "image": "src_THE_INTERSHIP",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/jir62_ptloI"
+      ],
+      "genres": [
+        "Comedy"
+      ]
+    }, 
+    {
+      "title": "RADIOACTIVE",
+      "image": "src_RADIOACTIVE",
+      "movieLinks": [
+        "https://#1",
+        "https://#2",
+        "https://#3",
+        "https://#4",
+        "https://www.youtube.com/embed/6x2ONAWdX1I"
+      ],
+      "genres": [
+        "Bio",
+        "Drama",
+        "Romance"
+      ]
+    }
+    
+  ]

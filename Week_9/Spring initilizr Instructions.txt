@@ -1,0 +1,15 @@
+1. Go to https://start.spring.io/
+2. Project [ Gradle Project ]
+3. Language [ Java ]
+4. Spring Boot [ Current ( not snapshot) ]
+5. Define Metadata
+5.1 Group = packageName
+...
+5.6 Packaging [ Jar ]
+5.7 Java [ 11 ]
+6. Dependencies
+6.1 Spring Data JPA
+6.2 H2 Database
+6.3 Spring Web
+6.4 Spring Boot DevTools
+6.5 Spring Boot Actuator

@@ -11,29 +11,29 @@ public class ZipCode {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private int zipcode;
+    private String zipCode;
 
     public ZipCode() {
 
     }
 
-    public ZipCode(int zipcode) {
-        this.zipcode = zipcode;
+    public ZipCode(String zipCode) {
+        this.zipCode = zipCode;
     }
 
-    public int getZipcode() {
-        return zipcode;
+    public String getZipCode() {
+        return zipCode;
     }
 
-    public void setZipcode(int zipcode) {
-        this.zipcode = zipcode;
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
     }
 
     @Override
     public String toString() {
         return "ZipCode{" +
                 "id=" + id +
-                ", zipcode=" + zipcode +
+                ", zipcode=" + zipCode +
                 '}';
     }
 }

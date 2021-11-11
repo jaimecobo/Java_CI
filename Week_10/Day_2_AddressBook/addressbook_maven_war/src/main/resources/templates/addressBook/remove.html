@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+    <div th:replace="fragments/style"></div>
+</head>
+<body>
+
+    <div th:replace="fragments/navbar"></div>
+    <div class="container">
+
+        <h3>Enter the Email Address of the entry you want to remove</h3>
+        <form action="#" th:action="@{/removeEntry}" th:object="${entry}" method="get">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email Address" th:field="*{email}">
+            </div>
+            <button class="btn btn-primary">Remove</button>
+        </form>
+
+        <div>&nbsp</div>
+
+        <div>
+            <a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
+            <a th:href="@{/newEntry}"><button class="btn btn-primary">Submit a New Entry</button></a>
+        </div>
+
+    </div>
+
+
+
+
+    <div th:replace="fragments/body"></div>
+
+</body>
+</html>

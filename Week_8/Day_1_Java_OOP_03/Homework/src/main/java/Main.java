@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Borrowed? (should be true): " + book_1.isBorrowed());
         book_1.returned();
         System.out.println("Borrowed? (should be false): " + book_1.isBorrowed());
-        System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------cd");
 
         // Create two libraries
         Library firstLibrary = new Library("10 Main St.");

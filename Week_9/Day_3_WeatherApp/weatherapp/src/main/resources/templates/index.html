@@ -42,8 +42,18 @@
                 + data.weather[0].get('icon') + '.png'}}"></p>
       </div>
     </div>
+
+    <!-- This is the list of last 10 zipcodes search -->
+    <ul>
+      <li th:each="search : ${searches}">
+        <span th:text="${search.zipCode}"></span>
+      </li>
+    </ul>
+
   </div>
 </div>
+
+
 
 
 </body>

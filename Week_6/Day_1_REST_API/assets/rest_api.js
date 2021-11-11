@@ -14,7 +14,7 @@ getData()
 
 
 //Getting data with fetch
-const fetch = require("node-fetch");
+
 fetch("https://www.styvio.com/api/aapl")
   .then(response => response.json())
   .then(json => console.log(json))
